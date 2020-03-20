@@ -4,3 +4,4 @@ connection: "dtcidigitalprod_sqls_metastore_conn"
 include: "*.view"
 
 explore: unique_swids_report {}
+explore: email_campaign_reporting {}
