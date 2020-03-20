@@ -8,7 +8,6 @@ view: email_campaign_reporting {
       SELECT CAMPAIGN_GO_LIVE_DATE_ID, NUM_EMAILS_SENT, NUM_EMAILS_OPENED,
         (NUM_EMAILS_CLICKED/NULLIF(NUM_EMAILS_OPENED,0)) * 100 AS EMAIL_CLICK_PCT
       FROM dis_mart.frm.fa_campaign_selection_response_summary
-      ORDER BY 1 desc
        ;;
   }
 
